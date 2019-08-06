@@ -1,0 +1,102 @@
+<?xml version="1.0"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <section id="ceneopl" translate="label" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+            <label>ORBA | Ceneo.pl</label>
+            <tab>catalog</tab>
+            <resource>Orba_Ceneopl::config</resource>
+            <group id="config" translate="label" type="text" sortOrder="1" showInDefault="1"
+                   showInWebsite="1" showInStore="1">
+                <label>Configuration</label>
+                <field id="hash" translate="label comment" type="text" sortOrder="2" showInDefault="1" showInWebsite="1"
+                       showInStore="1">
+                    <label>Unique Hash</label>
+                    <comment>This value is used for the feeds URLs generation</comment>
+                    <validate>required-entry</validate>
+                </field>
+            </group>
+            <group id="attr_core" translate="label" type="text" sortOrder="1" showInDefault="1"
+                   showInWebsite="1" showInStore="1">
+                <label>Mapping of the core attributes</label>
+                <field id="avail_1_name" translate="label" type="select" sortOrder="1"
+                       showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Product is available when</label>
+                    <source_model>Orba\Ceneopl\Model\Source\Attributes</source_model>
+                </field>
+                <field id="avail_1_value" translate="label comment" type="text" sortOrder="2"
+                       showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>equals</label>
+                </field>
+                <field id="avail_3_name" translate="label" type="select" sortOrder="3"
+                       showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Product will be available in 3 days when</label>
+                    <source_model>Orba\Ceneopl\Model\Source\Attributes</source_model>
+                </field>
+                <field id="avail_3_value" translate="label comment" type="text" sortOrder="4"
+                       showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>equals</label>
+                </field>
+                <field id="avail_7_name" translate="label" type="select" sortOrder="5"
+                       showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Product will be available in a week when</label>
+                    <source_model>Orba\Ceneopl\Model\Source\Attributes</source_model>
+                </field>
+                <field id="avail_7_value" translate="label comment" type="text" sortOrder="6"
+                       showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>equals</label>
+                </field>
+                <field id="avail_14_name" translate="label" type="select" sortOrder="7"
+                       showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Product will be available in more than week when</label>
+                    <source_model>Orba\Ceneopl\Model\Source\Attributes</source_model>
+                </field>
+                <field id="avail_14_value" translate="label comment" type="text" sortOrder="8"
+                       showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>equals</label>
+                </field>
+                <field id="set_name" translate="label" type="select" sortOrder="9"
+                       showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Product is a set when</label>
+                    <source_model>Orba\Ceneopl\Model\Source\Attributes</source_model>
+                </field>
+                <field id="set_value" translate="label comment" type="text" sortOrder="10"
+                       showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>equals</label>
+                </field>
+                <field id="basket_name" translate="label" type="select" sortOrder="11"
+                       showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Product is available for Buy in Ceneo when</label>
+                    <source_model>Orba\Ceneopl\Model\Source\Attributes</source_model>
+                </field>
+                <field id="basket_value" translate="label comment" type="text" sortOrder="12"
+                       showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>equals</label>
+                </field>
+            </group>
+            <group id="attr_other" translate="label" type="text" sortOrder="3" showInDefault="1"
+                   showInWebsite="1" showInStore="1">
+                <label>Mapping of the attributes for "Other" group</label>
+                <field id="Producent" translate="label" type="select" sortOrder="1"
+                       showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Producent</label>
+                    <comment>Producent danego produktu</comment>
+                    <source_model>Orba\Ceneopl\Model\Source\Attributes</source_model>
+                </field>
+                <field id="Kod_producenta" translate="label" type="select" sortOrder="2"
+                       showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Kod_producenta</label>
+                    <comment>Kod nadawany przez producenta</comment>
+                    <source_model>Orba\Ceneopl\Model\Source\Attributes</source_model>
+                </field>
+                <field id="EAN" translate="label" type="select" sortOrder="3"
+                       showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>EAN</label>
+                    <comment>Kod paskowy występujący na produktach, opakowaniach</comment>
+                    <source_model>Orba\Ceneopl\Model\Source\Attributes</source_model>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Ui:etc/ui_configuration.xsd">
+    <fieldset name="general">
+        <field name="ceneo_category_map" sortOrder="80" formElement="select">
+            <settings>
+                <dataType>text</dataType>
+                <label translate="true">Ceneo Category Map</label>
+            </settings>
+            <formElements>
+                <select>
+                    <settings>
+                        <options class="Orba\Ceneopl\Model\Source\Category"/>
+                    </settings>
+                </select>
+            </formElements>
+        </field>
+    </fieldset>
+</form>

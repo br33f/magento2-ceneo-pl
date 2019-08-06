@@ -1,0 +1,28 @@
+{
+    "name": "orba/magento2-ceneopl",
+    "description": "Ceneo.pl integration for Magento 2",
+    "require": {
+        "php": "7.0.2||7.0.4||~7.0.6||7.1.*",
+        "magento/framework": "101.0.*"
+    },
+    "type": "magento2-module",
+    "version": "1.0.1",
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Orba\\Ceneopl\\": ""
+        }
+    },
+    "authors": [
+        {
+            "name": "Orba Sp. z o.o.",
+            "homepage": "https://orba.pl/"
+        }
+    ],
+    "license": [
+        "OSL-3.0",
+        "AFL-3.0"
+    ]
+}

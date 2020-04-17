@@ -10,7 +10,7 @@ use Orba\Ceneopl\Api\CeneoCategoryListInterface;
 use Magento\Catalog\Model\ResourceModel\Category\CollectionFactory as CategoryCollectionFactory;
 use Magento\Framework\DB\Helper as DbHelper;
 use Magento\Catalog\Model\Category as CategoryModel;
-use Magento\Framework\Serialize\SerializerInterface;
+use Orba\Ceneopl\Helper\Serialize\SerializerInterface;
 use Magento\Framework\UrlInterface;
 use Magento\Framework\Stdlib\ArrayManager;
 

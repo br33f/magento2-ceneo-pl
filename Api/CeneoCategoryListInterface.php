@@ -4,7 +4,7 @@
  */
 namespace Orba\Ceneopl\Api;
 
-use Magento\Catalog\Api\CategoryListInterface;
+use Magento\Catalog\Api\CategoryRepositoryInterface;
 
 
 /**

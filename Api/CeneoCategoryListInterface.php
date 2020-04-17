@@ -4,13 +4,17 @@
  */
 namespace Orba\Ceneopl\Api;
 
-use Magento\Catalog\Api\CategoryRepositoryInterface;
-
-
 /**
  * @api
  */
-interface CeneoCategoryListInterface extends CategoryRepositoryInterface
+interface CeneoCategoryListInterface
 {
-
+    /**
+     * Get category list
+     *
+     * @param \Magento\Framework\Api\SearchCriteriaInterface $searchCriteria
+     * @return \Magento\Catalog\Api\Data\CategorySearchResultsInterface
+     * @since 101.1.0
+     */
+    public function getList(\Magento\Framework\Api\SearchCriteriaInterface $searchCriteria);
 }

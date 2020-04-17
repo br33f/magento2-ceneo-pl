@@ -15,9 +15,9 @@ use Magento\Framework\Api\Search\FilterGroupBuilder;
 use Magento\Framework\Api\Search\FilterGroup;
 use Magento\CatalogInventory\Api\StockStatusRepositoryInterface;
 use Magento\CatalogInventory\Api\StockStatusCriteriaInterface;
+use Orba\Ceneopl\Api\CeneoCategoryListInterface;
 use Orba\Ceneopl\Model\Source\Category;
 use Magento\Framework\App\Config\ScopeConfigInterface;
-use Magento\Catalog\Api\CategoryListInterface;
 use Magento\Framework\Api\SearchCriteriaInterface;
 
 /**
@@ -93,7 +93,7 @@ class Offers
      */
     private $stockRegistry;
     /**
-     * @var CategoryListInterface
+     * @var CeneoCategoryListInterface
      */
     private $categoryList;
     /**
@@ -125,7 +125,7 @@ class Offers
      * @param ScopeConfigInterface $_config
      * @param Mapping $mapping
      * @param \Magento\CatalogInventory\Api\StockRegistryInterface $stockRegistry
-     * @param CategoryListInterface $categoryList
+     * @param CeneoCategoryListInterface $categoryList
      * @param \Magento\Catalog\Model\ResourceModel\Product\CollectionFactory $productCollectionFactory
      * @param FilterGroup $filterGroup
      * @param SearchCriteriaInterface $searchCriteriaInterface
@@ -144,7 +144,7 @@ class Offers
         ScopeConfigInterface $_config,
         Mapping $mapping,
         \Magento\CatalogInventory\Api\StockRegistryInterface $stockRegistry,
-        CategoryListInterface $categoryList,
+        CeneoCategoryListInterface $categoryList,
         \Magento\Catalog\Model\ResourceModel\Product\CollectionFactory $productCollectionFactory,
         FilterGroup $filterGroup,
         SearchCriteriaInterface $searchCriteriaInterface,

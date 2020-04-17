@@ -8,9 +8,9 @@ namespace Orba\Ceneopl\Model;
 use Magento\Framework\Api\SortOrderBuilder;
 use Magento\Framework\Api\SortOrder;
 use Magento\Framework\Api\SearchCriteriaBuilder;
-use Magento\Catalog\Api\CategoryListInterface;
 use Magento\Catalog\Api\Data\ProductInterface;
 use \Magento\Catalog\Model\ResourceModel\Product\CollectionFactory;
+use Orba\Ceneopl\Api\CeneoCategoryListInterface;
 
 /**
  * Class Data
@@ -38,13 +38,13 @@ class Data
      * @param CollectionFactory $productCollectionFactory
      * @param SortOrderBuilder $sortOrderBuilder
      * @param SearchCriteriaBuilder $searchCriteriaBuilder
-     * @param CategoryListInterface $categoryList
+     * @param CeneoCategoryListInterface $categoryList
      */
     public function __construct(
         CollectionFactory $productCollectionFactory,
         SortOrderBuilder $sortOrderBuilder,
         SearchCriteriaBuilder $searchCriteriaBuilder,
-        CategoryListInterface $categoryList
+        CeneoCategoryListInterface $categoryList
 
     )
     {

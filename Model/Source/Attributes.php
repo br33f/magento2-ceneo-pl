@@ -6,7 +6,7 @@
 namespace Orba\Ceneopl\Model\Source;
 
 use Magento\Catalog\Api\ProductAttributeRepositoryInterface;
-use Magento\Framework\Api\SearchCriteriaBuilder;
+use Orba\Ceneopl\Helper\SearchCriteriaBuilder;
 use Magento\Framework\Option\ArrayInterface;
 
 

@@ -4,6 +4,8 @@
  */
 namespace Orba\Ceneopl\Api;
 
+use Orba\Ceneopl\Helper\SearchCriteriaInterface;
+
 /**
  * @api
  */
@@ -12,9 +14,9 @@ interface CeneoCategoryListInterface
     /**
      * Get category list
      *
-     * @param \Magento\Framework\Api\SearchCriteriaInterface $searchCriteria
+     * @param SearchCriteriaInterface $searchCriteria
      * @return \Magento\Catalog\Api\Data\CategorySearchResultsInterface
      * @since 101.1.0
      */
-    public function getList(\Magento\Framework\Api\SearchCriteriaInterface $searchCriteria);
+    public function getList(SearchCriteriaInterface $searchCriteria);
 }

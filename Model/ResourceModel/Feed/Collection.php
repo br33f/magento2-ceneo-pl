@@ -55,10 +55,10 @@ class Collection extends \Magento\Framework\Model\ResourceModel\Db\Collection\Ab
 
 
     /**
-     * @param \Magento\Framework\Api\SearchCriteriaInterface|null $searchCriteria
+     * @param \Orba\Ceneopl\Helper\SearchCriteriaInterface|null $searchCriteria
      * @return $this
      */
-    public function setSearchCriteria(\Magento\Framework\Api\SearchCriteriaInterface $searchCriteria = null)
+    public function setSearchCriteria(\Orba\Ceneopl\Helper\SearchCriteriaInterface $searchCriteria = null)
     {
         $this->searchCriteria = $searchCriteria;
         return $this;

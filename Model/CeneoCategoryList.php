@@ -6,7 +6,7 @@
 namespace Orba\Ceneopl\Model;
 
 use Orba\Ceneopl\Api\Data\CeneocategorySearchResultsInterfaceFactory;
-use Magento\Framework\Api\SearchCriteriaInterface;
+use Orba\Ceneopl\Helper\SearchCriteriaInterface;
 use Orba\Ceneopl\Model\ResourceModel\Ceneocategory\CollectionFactory;
 use Orba\Ceneopl\Helper\SearchCriteria\CollectionProcessorInterface;
 use Orba\Ceneopl\Api\CeneoCategoryListInterface;

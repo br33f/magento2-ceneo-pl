@@ -7,7 +7,7 @@ namespace Orba\Ceneopl\Model;
 
 use Magento\Catalog\Api\Data\ProductInterface;
 use Magento\Catalog\Api\ProductRepositoryInterface;
-use Magento\Framework\Api\SearchCriteriaBuilder;
+use Orba\Ceneopl\Helper\SearchCriteriaBuilder;
 use Magento\Framework\Api\SortOrder;
 use Magento\Framework\Api\SortOrderBuilder;
 use Magento\Framework\Api\FilterBuilder;
@@ -18,7 +18,7 @@ use Magento\CatalogInventory\Api\StockStatusCriteriaInterface;
 use Orba\Ceneopl\Api\CeneoCategoryListInterface;
 use Orba\Ceneopl\Model\Source\Category;
 use Magento\Framework\App\Config\ScopeConfigInterface;
-use Magento\Framework\Api\SearchCriteriaInterface;
+use Orba\Ceneopl\Helper\SearchCriteriaInterface;
 
 /**
  * Class Offers

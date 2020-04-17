@@ -5,8 +5,8 @@
  */
 namespace Orba\Ceneopl\Helper\SearchCriteria;
 
-use Magento\Framework\Api\SearchCriteriaInterface;
 use Magento\Framework\Data\Collection\AbstractDb;
+use Orba\Ceneopl\Helper\SearchCriteriaInterface;
 
 /**
  * @api

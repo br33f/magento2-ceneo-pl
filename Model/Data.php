@@ -7,7 +7,7 @@ namespace Orba\Ceneopl\Model;
 
 use Magento\Framework\Api\SortOrderBuilder;
 use Magento\Framework\Api\SortOrder;
-use Magento\Framework\Api\SearchCriteriaBuilder;
+use Orba\Ceneopl\Helper\SearchCriteriaBuilder;
 use Magento\Catalog\Api\Data\ProductInterface;
 use \Magento\Catalog\Model\ResourceModel\Product\CollectionFactory;
 use Orba\Ceneopl\Api\CeneoCategoryListInterface;

@@ -5,7 +5,7 @@
 
 namespace Orba\Ceneopl\Model\Source;
 
-use Magento\Framework\Api\SearchCriteriaBuilder;
+use Orba\Ceneopl\Helper\SearchCriteriaBuilder;
 use Orba\Ceneopl\Api\CeneoCategoryListInterface;
 use Magento\Catalog\Model\ResourceModel\Category\CollectionFactory as CategoryCollectionFactory;
 use Magento\Framework\DB\Helper as DbHelper;

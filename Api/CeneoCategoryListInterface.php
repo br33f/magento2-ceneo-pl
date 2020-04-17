@@ -10,7 +10,7 @@ use Magento\Catalog\Api\CategoryRepositoryInterface;
 /**
  * @api
  */
-interface CeneoCategoryListInterface extends CategoryListInterface
+interface CeneoCategoryListInterface extends CategoryRepositoryInterface
 {
 
 }
